@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS-Activate Мошенничество - Разоблачение схемы обмана | Защитите свои деньги</title>
+    <meta name="description" content="Полное разоблачение мошеннической схемы SMS-Activate, hStock и ZX Shop. Как не попасться на развод при покупке аккаунтов Google. Юридический разбор от практикующего юриста.">
+    <meta name="keywords" content="sms-activate мошенники, sms-activate развод, sms-activate отзывы, hstock мошенничество, готовые аккаунты google обман">
+    <meta property="og:title" content="SMS-Activate - Мошенническая схема разоблачена">
+    <meta property="og:description" content="Как меня развели на 54 рубля: полный разбор мошеннической схемы SMS-Activate от юриста">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://sms-activate-scam.info">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8B5CF6;
+            --secondary: #EC4899;
+            --accent: #06B6D4;
+            --danger: #EF4444;
+            --warning: #F59E0B;
+            --success: #10B981;
+            --dark: #1F2937;
+            --light: #F9FAFB;
+            --glass: rgba(255, 255, 255, 0.1);
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --glow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--dark);
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(270deg, #667eea, #764ba2, #f093fb, #f5576c);
+            background-size: 800% 800%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            to {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Loading Screen */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 2rem;
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo::before {
+            content: "⚠️";
+            -webkit-text-fill-color: initial;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 2rem 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .warning-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid var(--danger);
+            border-radius: 50px;
+            color: var(--danger);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .typewriter {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--danger), var(--warning));
+            color: white;
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(239, 68, 68, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Scam Details Section */
+        .scam-details {
+            padding: 80px 2rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .scheme-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: slideIn 0.6s ease forwards;
+        }
+
+        .step-card:nth-child(1) { animation-delay: 0.1s; }
+        .step-card:nth-child(2) { animation-delay: 0.2s; }
+        .step-card:nth-child(3) { animation-delay: 0.3s; }
+        .step-card:nth-child(4) { animation-delay: 0.4s; }
+        .step-card:nth-child(5) { animation-delay: 0.5s; }
+        .step-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--danger), var(--warning));
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .step-description {
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        /* Evidence Section */
+        .evidence {
+            padding: 80px 2rem;
+            background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+            color: white;
+        }
+
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .evidence-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .evidence-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-message {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            position: relative;
+        }
+
+        .chat-message.user {
+            background: rgba(139, 92, 246, 0.2);
+            margin-left: 20%;
+        }
+
+        .chat-message.support {
+            background: rgba(239, 68, 68, 0.2);
+            margin-right: 20%;
+        }
+
+        .message-label {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        /* How to Protect Section */
+        .protection {
+            padding: 80px 2rem;
+            background: white;
+        }
+
+        .protection-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tip-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(236, 72, 153, 0.05));
+            transition: all 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .tip-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .tip-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .tip-text {
+            color: #6B7280;
+            line-height: 1.5;
+        }
+
+        /* Red Flags Section */
+        .red-flags {
+            padding: 80px 2rem;
+            background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
+        }
+
+        .flags-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .flag-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--danger);
+        }
+
+        .flag-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .flag-icon {
+            font-size: 2rem;
+            color: var(--danger);
+            flex-shrink: 0;
+        }
+
+        .flag-content {
+            flex: 1;
+        }
+
+        .flag-title {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .flag-description {
+            color: #6B7280;
+            line-height: 1.5;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 2rem;
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(236, 72, 153, 0.05));
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: transparent;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .faq-answer p {
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 9999;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .toast-icon {
+            font-size: 1.5rem;
+        }
+
+        .toast.warning {
+            background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+            color: #92400E;
+        }
+
+        .toast.success {
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            color: #065F46;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                padding: 5rem 2rem;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero {
+                padding: 100px 1rem 60px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .scheme-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-message.user,
+            .chat-message.support {
+                margin: 0 0 1rem 0;
+            }
+
+            .protection-tips {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Glow Effects */
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+            }
+            to {
+                box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 30px rgba(139, 92, 246, 0.6);
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+        }
+
+        /* Mirror Sites Alert */
+        .mirror-sites {
+            padding: 60px 2rem;
+            background: linear-gradient(135deg, #FEE2E2, #FECACA);
+        }
+
+        .mirrors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .mirror-item {
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid var(--danger);
+            transition: all 0.3s ease;
+        }
+
+        .mirror-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.2);
+        }
+
+        .mirror-url {
+            font-family: 'Courier New', monospace;
+            color: var(--danger);
+            font-weight: bold;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .star {
+            color: #FCD34D;
+        }
+
+        .star.empty {
+            color: #E5E7EB;
+        }
+
+        /* Legal Actions */
+        .legal-actions {
+            padding: 60px 2rem;
+            background: white;
+        }
+
+        .action-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .action-card {
+            padding: 2rem;
+            background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
+            border-radius: 15px;
+            border-left: 5px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .action-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.15);
+        }
+
+        .action-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .action-steps {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .action-steps li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #6B7280;
+        }
+
+        .action-steps li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* Stats Counter */
+        .stats {
+            padding: 60px 2rem;
+            background: linear-gradient(135deg, var(--dark), #374151);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FCD34D, #FDE68A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SMS-Activate SCAM</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#scheme" data-translate="nav-scheme">Схема</a></li>
+                <li><a href="#evidence" data-translate="nav-evidence">Доказательства</a></li>
+                <li><a href="#protection" data-translate="nav-protection">Защита</a></li>
+                <li><a href="#faq" data-translate="nav-faq">FAQ</a></li>
+                <li><a href="#contact" data-translate="nav-contact">Контакты</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLanguage('ru')">RU</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="warning-badge" data-translate="warning-badge">⚠️ МОШЕННИЧЕСКАЯ СХЕМА РАСКРЫТА</div>
+            <h1 data-translate="hero-title">SMS-Activate, hStock, ZX Shop - РАЗОБЛАЧЕНИЕ</h1>
+            <p class="subtitle">
+                <span class="typewriter" data-translate="hero-subtitle">Как меня развели на 54 рубля и почему это касается каждого</span>
+            </p>
+            <div class="cta-buttons">
+                <a href="#scheme" class="btn btn-primary">
+                    <span data-translate="btn-learn">🔍 Узнать схему обмана</span>
+                </a>
+                <a href="#protection" class="btn btn-secondary">
+                    <span data-translate="btn-protect">🛡️ Защитить себя</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scam Scheme Details -->
+    <section class="scam-details" id="scheme">
+        <div class="container">
+            <h2 class="section-title" data-translate="scheme-title">Как работает схема обмана</h2>
+            <div class="scheme-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title" data-translate="step1-title">Красивая витрина</h3>
+                    <p class="step-description" data-translate="step1-desc">SMS-Activate создает привлекательный сайт с "готовыми аккаунтами" по низким ценам</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title" data-translate="step2-title">Оплата товара</h3>
+                    <p class="step-description" data-translate="step2-desc">Вы видите товар, цену, описание - всё как в обычном магазине и оплачиваете</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title" data-translate="step3-title">Сюрприз!</h3>
+                    <p class="step-description" data-translate="step3-desc">После оплаты выясняется: "Мы тут ни при чем, вы купили у hStock!"</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title" data-translate="step4-title">Круговая порука</h3>
+                    <p class="step-description" data-translate="step4-desc">hStock: "Мы площадка, товар от ZX Shop!" ZX Shop молчит</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title" data-translate="step5-title">1 час на спор</h3>
+                    <p class="step-description" data-translate="step5-desc">На разбор дается 1 час (по закону - 10 дней!)</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title" data-translate="step6-title">Деньги потеряны</h3>
+                    <p class="step-description" data-translate="step6-desc">Вы остаетесь без товара и без денег</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Section -->
+    <section class="evidence" id="evidence">
+        <div class="container">
+            <h2 class="section-title" style="color: white;" data-translate="evidence-title">Доказательства мошенничества</h2>
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <h3 data-translate="chat-title">💬 Реальная переписка с поддержкой</h3>
+                    <div class="chat-message user">
+                        <div class="message-label" data-translate="client">Клиент:</div>
+                        <p data-translate="client-msg1">Где купленный товар?!</p>
+                    </div>
+                    <div class="chat-message support">
+                        <div class="message-label" data-translate="support">Поддержка:</div>
+                        <p data-translate="support-msg1">По всем вопросам обращайтесь в поддержку hStock</p>
+                    </div>
+                    <div class="chat-message user">
+                        <div class="message-label" data-translate="client">Клиент:</div>
+                        <p data-translate="client-msg2">Какой hStock? Вы мне продали!</p>
+                    </div>
+                    <div class="chat-message support">
+                        <div class="message-label" data-translate="support">Поддержка:</div>
+                        <p data-translate="support-msg2">[Копипаста про телеграм-бот]</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <h3 data-translate="violations-title">⚖️ Нарушения законодательства</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;">
+                            <strong>📕 Статья 159 УК РФ</strong>
+                            <p data-translate="violation1">Мошенничество - есть умысел, обман, завладение деньгами</p>
+                        </li>
+                        <li style="margin-bottom: 1rem;">
+                            <strong>📘 Закон о защите прав потребителей</strong>
+                            <p data-translate="violation2">Нарушены сроки рассмотрения претензий (1 час вместо 10 дней)</p>
+                        </li>
+                        <li>
+                            <strong>📗 Статья 10 ГК РФ</strong>
+                            <p data-translate="violation3">Злоупотребление правом через мошенническую схему</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mirror Sites Alert -->
+    <section class="mirror-sites">
+        <div class="container">
+            <h2 class="section-title" data-translate="mirrors-title">⚠️ Зеркала мошенников</h2>
+            <div class="mirrors-grid">
+                <div class="mirror-item">
+                    <div class="mirror-url">sms-activate.org</div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                    </div>
+                    <small>2.4/5</small>
+                </div>
+                <div class="mirror-item">
+                    <div class="mirror-url">sms-activate.io</div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                    </div>
+                    <small data-translate="suspicious">Подозрительно</small>
+                </div>
+                <div class="mirror-item">
+                    <div class="mirror-url">sms-activate.guru</div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                    </div>
+                    <small data-translate="avoid">Избегать</small>
+                </div>
+                <div class="mirror-item">
+                    <div class="mirror-url">sms-activate.world</div>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                        <span class="star empty">⭐</span>
+                    </div>
+                    <small data-translate="scam">Мошенники</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="54">0</div>
+                    <div class="stat-label" data-translate="stat1">Рублей украдено у меня</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1">0</div>
+                    <div class="stat-label" data-translate="stat2">Час на разбор спора</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label" data-translate="stat3">Компании в схеме</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="0">0</div>
+                    <div class="stat-label" data-translate="stat4">Шансов вернуть деньги</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protection Section -->
+    <section class="protection" id="protection">
+        <div class="container">
+            <h2 class="section-title" data-translate="protection-title">Как защитить себя</h2>
+            <div class="protection-tips">
+                <div class="tip-card">
+                    <div class="tip-icon">🔍</div>
+                    <h3 class="tip-title" data-translate="tip1-title">Проверяйте отзывы</h3>
+                    <p class="tip-text" data-translate="tip1-text">Читайте отзывы ДО покупки на независимых площадках</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💳</div>
+                    <h3 class="tip-title" data-translate="tip2-title">Безопасная оплата</h3>
+                    <p class="tip-text" data-translate="tip2-text">Используйте сервисы с защитой покупателей</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🏢</div>
+                    <h3 class="tip-title" data-translate="tip3-title">Официальные источники</h3>
+                    <p class="tip-text" data-translate="tip3-text">Покупайте аккаунты только у Google, Microsoft и др.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">⚠️</div>
+                    <h3 class="tip-title" data-translate="tip4-title">Низкая цена = обман</h3>
+                    <p class="tip-text" data-translate="tip4-text">Если цена слишком хороша - это 100% развод</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red Flags Section -->
+    <section class="red-flags">
+        <div class="container">
+            <h2 class="section-title" data-translate="redflags-title">🚩 Красные флаги мошенников</h2>
+            <div class="flags-container">
+                <div class="flag-item">
+                    <div class="flag-icon">🚩</div>
+                    <div class="flag-content">
+                        <div class="flag-title" data-translate="flag1-title">Готовые аккаунты</div>
+                        <div class="flag-description" data-translate="flag1-desc">Продажа "готовых" аккаунтов Google, Facebook - это всегда мошенничество</div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-icon">🚩</div>
+                    <div class="flag-content">
+                        <div class="flag-title" data-translate="flag2-title">Цепочка партнеров</div>
+                        <div class="flag-description" data-translate="flag2-desc">Когда непонятно кто продает, а все показывают друг на друга</div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-icon">🚩</div>
+                    <div class="flag-content">
+                        <div class="flag-title" data-translate="flag3-title">1 час на спор</div>
+                        <div class="flag-description" data-translate="flag3-desc">Нереальные сроки рассмотрения споров (по закону - 10 дней)</div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-icon">🚩</div>
+                    <div class="flag-content">
+                        <div class="flag-title" data-translate="flag4-title">Боты в поддержке</div>
+                        <div class="flag-description" data-translate="flag4-desc">Копипаста ответов и отправка в телеграм-боты</div>
+                    </div>
+                </div>
+                <div class="flag-item">
+                    <div class="flag-icon">🚩</div>
+                    <div class="flag-content">
+                        <div class="flag-title" data-translate="flag5-title">Множество доменов</div>
+                        <div class="flag-description" data-translate="flag5-desc">Клоны сайтов .ru/.io/.guru/.world - признак мошенников</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Actions Section -->
+    <section class="legal-actions">
+        <div class="container">
+            <h2 class="section-title" data-translate="legal-title">Что делать, если вас обманули</h2>
+            <div class="action-cards">
+                <div class="action-card">
+                    <h3 class="action-title">
+                        <span>👮</span>
+                        <span data-translate="action1-title">Официальный путь</span>
+                    </h3>
+                    <ul class="action-steps">
+                        <li data-translate="action1-step1">Заявление в полицию по ст. 159 УК РФ</li>
+                        <li data-translate="action1-step2">Жалоба в Роскомнадзор на блокировку сайта</li>
+                        <li data-translate="action1-step3">Обращение в Роспотребнадзор</li>
+                        <li data-translate="action1-step4">Претензия в банк (чарджбэк)</li>
+                    </ul>
+                </div>
+                <div class="action-card">
+                    <h3 class="action-title">
+                        <span>📢</span>
+                        <span data-translate="action2-title">Народный путь</span>
+                    </h3>
+                    <ul class="action-steps">
+                        <li data-translate="action2-step1">Пост в соцсетях с пруфами</li>
+                        <li data-translate="action2-step2">Отзывы на Trustpilot, Отзовик</li>
+                        <li data-translate="action2-step3">Видео-разоблачение на YouTube</li>
+                        <li data-translate="action2-step4">SEO-атака через сайты-разоблачения</li>
+                    </ul>
+                </div>
+                <div class="action-card">
+                    <h3 class="action-title">
+                        <span>💰</span>
+                        <span data-translate="action3-title">Возврат денег</span>
+                    </h3>
+                    <ul class="action-steps">
+                        <li data-translate="action3-step1">Чарджбэк через банк (если платили картой)</li>
+                        <li data-translate="action3-step2">Диспут в PayPal (если платили через них)</li>
+                        <li data-translate="action3-step3">Жалоба в платежную систему</li>
+                        <li data-translate="action3-step4">Коллективный иск (найти других жертв)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-translate="faq-title">Часто задаваемые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq1-q">
+                        Можно ли вернуть деньги после покупки?
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq1-a">Шансы минимальны. Схема построена так, чтобы максимально усложнить возврат. Единственный реальный способ - чарджбэк через банк, если платили картой.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq2-q">
+                        Почему полиция не помогает?
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq2-a">Сумма ущерба слишком мала для возбуждения дела. Мошенники специально держат цены низкими, чтобы жертвы не обращались в правоохранительные органы.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq3-q">
+                        Это легальная деятельность?
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq3-a">Нет! Это чистое мошенничество по статье 159 УК РФ. Есть умысел, обман и незаконное завладение чужими деньгами.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq4-q">
+                        Как еще называются эти мошенники?
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq4-a">SMS-Activate работает под разными доменами: .ru, .org, .io, .guru, .world, .page. Также связаны с hStock.org и мифическим ZX Shop.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq5-q">
+                        Что делать, если я уже купил?
+                    </button>
+                    <div class="faq-answer">
+                        <p data-translate="faq5-a">Немедленно обратитесь в банк для чарджбэка, сделайте скриншоты всей переписки, напишите отзывы на всех площадках и предупредите других.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 data-translate="contact-title">Нужна юридическая помощь?</h2>
+            <p data-translate="contact-desc">Я практикующий юрист, специализируюсь на интернет-праве и защите потребителей. Помогу составить заявления и вернуть деньги.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>lawyer@anti-scam.info</span>
+                </div>
+                <div class="contact-item">
+                    <span>💬</span>
+                    <span>Telegram: @antiscam_lawyer</span>
+                </div>
+            </div>
+            <div class="cta-buttons" style="margin-top: 2rem;">
+                <a href="#" class="btn btn-secondary" onclick="showToast('success', 'Скоро добавим форму обратной связи!')">
+                    <span data-translate="btn-report">📝 Сообщить о мошенничестве</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#scheme" data-translate="footer-scheme">Схема обмана</a>
+                <a href="#evidence" data-translate="footer-evidence">Доказательства</a>
+                <a href="#protection" data-translate="footer-protection">Защита</a>
+                <a href="#faq" data-translate="footer-faq">FAQ</a>
+                <a href="#contact" data-translate="footer-contact">Контакты</a>
+            </div>
+            <div class="copyright">
+                <p data-translate="copyright">© 2024 SMS-Activate Scam Alert. Все права защищены. Сайт создан для предупреждения о мошенничестве.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;" data-translate="disclaimer">
+                    Данный сайт носит информационный характер и создан для защиты потребителей от мошенничества.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon"></span>
+        <span class="toast-message"></span>
+    </div>
+
+    <script>
+        // Translations
+        const translations = {
+            ru: {
+                'nav-scheme': 'Схема',
+                'nav-evidence': 'Доказательства',
+                'nav-protection': 'Защита',
+                'nav-faq': 'FAQ',
+                'nav-contact': 'Контакты',
+                'warning-badge': '⚠️ МОШЕННИЧЕСКАЯ СХЕМА РАСКРЫТА',
+                'hero-title': 'SMS-Activate, hStock, ZX Shop - РАЗОБЛАЧЕНИЕ',
+                'hero-subtitle': 'Как меня развели на 54 рубля и почему это касается каждого',
+                'btn-learn': '🔍 Узнать схему обмана',
+                'btn-protect': '🛡️ Защитить себя',
+                'scheme-title': 'Как работает схема обмана',
+                'step1-title': 'Красивая витрина',
+                'step1-desc': 'SMS-Activate создает привлекательный сайт с "готовыми аккаунтами" по низким ценам',
+                'step2-title': 'Оплата товара',
+                'step2-desc': 'Вы видите товар, цену, описание - всё как в обычном магазине и оплачиваете',
+                'step3-title': 'Сюрприз!',
+                'step3-desc': 'После оплаты выясняется: "Мы тут ни при чем, вы купили у hStock!"',
+                'step4-title': 'Круговая порука',
+                'step4-desc': 'hStock: "Мы площадка, товар от ZX Shop!" ZX Shop молчит',
+                'step5-title': '1 час на спор',
+                'step5-desc': 'На разбор дается 1 час (по закону - 10 дней!)',
+                'step6-title': 'Деньги потеряны',
+                'step6-desc': 'Вы остаетесь без товара и без денег',
+                'evidence-title': 'Доказательства мошенничества',
+                'chat-title': '💬 Реальная переписка с поддержкой',
+                'client': 'Клиент:',
+                'support': 'Поддержка:',
+                'client-msg1': 'Где купленный товар?!',
+                'support-msg1': 'По всем вопросам обращайтесь в поддержку hStock',
+                'client-msg2': 'Какой hStock? Вы мне продали!',
+                'support-msg2': '[Копипаста про телеграм-бот]',
+                'violations-title': '⚖️ Нарушения законодательства',
+                'violation1': 'Мошенничество - есть умысел, обман, завладение деньгами',
+                'violation2': 'Нарушены сроки рассмотрения претензий (1 час вместо 10 дней)',
+                'violation3': 'Злоупотребление правом через мошенническую схему',
+                'mirrors-title': '⚠️ Зеркала мошенников',
+                'suspicious': 'Подозрительно',
+                'avoid': 'Избегать',
+                'scam': 'Мошенники',
+                'stat1': 'Рублей украдено у меня',
+                'stat2': 'Час на разбор спора',
+                'stat3': 'Компании в схеме',
+                'stat4': 'Шансов вернуть деньги',
+                'protection-title': 'Как защитить себя',
+                'tip1-title': 'Проверяйте отзывы',
+                'tip1-text': 'Читайте отзывы ДО покупки на независимых площадках',
+                'tip2-title': 'Безопасная оплата',
+                'tip2-text': 'Используйте сервисы с защитой покупателей',
+                'tip3-title': 'Официальные источники',
+                'tip3-text': 'Покупайте аккаунты только у Google, Microsoft и др.',
+                'tip4-title': 'Низкая цена = обман',
+                'tip4-text': 'Если цена слишком хороша - это 100% развод',
+                'redflags-title': '🚩 Красные флаги мошенников',
+                'flag1-title': 'Готовые аккаунты',
+                'flag1-desc': 'Продажа "готовых" аккаунтов Google, Facebook - это всегда мошенничество',
+                'flag2-title': 'Цепочка партнеров',
+                'flag2-desc': 'Когда непонятно кто продает, а все показывают друг на друга',
+                'flag3-title': '1 час на спор',
+                'flag3-desc': 'Нереальные сроки рассмотрения споров (по закону - 10 дней)',
+                'flag4-title': 'Боты в поддержке',
+                'flag4-desc': 'Копипаста ответов и отправка в телеграм-боты',
+                'flag5-title': 'Множество доменов',
+                'flag5-desc': 'Клоны сайтов .ru/.io/.guru/.world - признак мошенников',
+                'legal-title': 'Что делать, если вас обманули',
+                'action1-title': 'Официальный путь',
+                'action1-step1': 'Заявление в полицию по ст. 159 УК РФ',
+                'action1-step2': 'Жалоба в Роскомнадзор на блокировку сайта',
+                'action1-step3': 'Обращение в Роспотребнадзор',
+                'action1-step4': 'Претензия в банк (чарджбэк)',
+                'action2-title': 'Народный путь',
+                'action2-step1': 'Пост в соцсетях с пруфами',
+                'action2-step2': 'Отзывы на Trustpilot, Отзовик',
+                'action2-step3': 'Видео-разоблачение на YouTube',
+                'action2-step4': 'SEO-атака через сайты-разоблачения',
+                'action3-title': 'Возврат денег',
+                'action3-step1': 'Чарджбэк через банк (если платили картой)',
+                'action3-step2': 'Диспут в PayPal (если платили через них)',
+                'action3-step3': 'Жалоба в платежную систему',
+                'action3-step4': 'Коллективный иск (найти других жертв)',
+                'faq-title': 'Часто задаваемые вопросы',
+                'faq1-q': 'Можно ли вернуть деньги после покупки?',
+                'faq1-a': 'Шансы минимальны. Схема построена так, чтобы максимально усложнить возврат. Единственный реальный способ - чарджбэк через банк, если платили картой.',
+                'faq2-q': 'Почему полиция не помогает?',
+                'faq2-a': 'Сумма ущерба слишком мала для возбуждения дела. Мошенники специально держат цены низкими, чтобы жертвы не обращались в правоохранительные органы.',
+                'faq3-q': 'Это легальная деятельность?',
+                'faq3-a': 'Нет! Это чистое мошенничество по статье 159 УК РФ. Есть умысел, обман и незаконное завладение чужими деньгами.',
+                'faq4-q': 'Как еще называются эти мошенники?',
+                'faq4-a': 'SMS-Activate работает под разными доменами: .ru, .org, .io, .guru, .world, .page. Также связаны с hStock.org и мифическим ZX Shop.',
+                'faq5-q': 'Что делать, если я уже купил?',
+                'faq5-a': 'Немедленно обратитесь в банк для чарджбэка, сделайте скриншоты всей переписки, напишите отзывы на всех площадках и предупредите других.',
+                'contact-title': 'Нужна юридическая помощь?',
+                'contact-desc': 'Я практикующий юрист, специализируюсь на интернет-праве и защите потребителей. Помогу составить заявления и вернуть деньги.',
+                'btn-report': '📝 Сообщить о мошенничестве',
+                'footer-scheme': 'Схема обмана',
+                'footer-evidence': 'Доказательства',
+                'footer-protection': 'Защита',
+                'footer-faq': 'FAQ',
+                'footer-contact': 'Контакты',
+                'copyright': '© 2024 SMS-Activate Scam Alert. Все права защищены. Сайт создан для предупреждения о мошенничестве.',
+                'disclaimer': 'Данный сайт носит информационный характер и создан для защиты потребителей от мошенничества.'
+            },
+            en: {
+                'nav-scheme': 'Scheme',
+                'nav-evidence': 'Evidence',
+                'nav-protection': 'Protection',
+                'nav-faq': 'FAQ',
+                'nav-contact': 'Contact',
+                'warning-badge': '⚠️ SCAM SCHEME EXPOSED',
+                'hero-title': 'SMS-Activate, hStock, ZX Shop - EXPOSED',
+                'hero-subtitle': 'How I got scammed for 54 rubles and why it concerns everyone',
+                'btn-learn': '🔍 Learn the scam scheme',
+                'btn-protect': '🛡️ Protect yourself',
+                'scheme-title': 'How the scam works',
+                'step1-title': 'Beautiful storefront',
+                'step1-desc': 'SMS-Activate creates an attractive site with "ready-made accounts" at low prices',
+                'step2-title': 'Payment',
+                'step2-desc': 'You see the product, price, description - everything looks legitimate and you pay',
+                'step3-title': 'Surprise!',
+                'step3-desc': 'After payment: "We\'re not involved, you bought from hStock!"',
+                'step4-title': 'Circular blame',
+                'step4-desc': 'hStock: "We\'re just a platform, product is from ZX Shop!" ZX Shop is silent',
+                'step5-title': '1 hour for dispute',
+                'step5-desc': 'Only 1 hour for dispute resolution (legally should be 10 days!)',
+                'step6-title': 'Money lost',
+                'step6-desc': 'You\'re left without product and without money',
+                'evidence-title': 'Evidence of fraud',
+                'chat-title': '💬 Real chat with support',
+                'client': 'Client:',
+                'support': 'Support:',
+                'client-msg1': 'Where is my purchased product?!',
+                'support-msg1': 'For all questions contact hStock support',
+                'client-msg2': 'What hStock? You sold it to me!',
+                'support-msg2': '[Copy-paste about telegram bot]',
+                'violations-title': '⚖️ Legal violations',
+                'violation1': 'Fraud - intent, deception, taking money',
+                'violation2': 'Violated complaint processing deadlines (1 hour instead of 10 days)',
+                'violation3': 'Abuse of rights through fraudulent scheme',
+                'mirrors-title': '⚠️ Scammer mirror sites',
+                'suspicious': 'Suspicious',
+                'avoid': 'Avoid',
+                'scam': 'Scammers',
+                'stat1': 'Rubles stolen from me',
+                'stat2': 'Hour for dispute',
+                'stat3': 'Companies in scheme',
+                'stat4': 'Chances to get money back',
+                'protection-title': 'How to protect yourself',
+                'tip1-title': 'Check reviews',
+                'tip1-text': 'Read reviews BEFORE purchase on independent platforms',
+                'tip2-title': 'Safe payment',
+                'tip2-text': 'Use services with buyer protection',
+                'tip3-title': 'Official sources',
+                'tip3-text': 'Buy accounts only from Google, Microsoft, etc.',
+                'tip4-title': 'Low price = scam',
+                'tip4-text': 'If the price is too good - it\'s 100% scam',
+                'redflags-title': '🚩 Scammer red flags',
+                'flag1-title': 'Ready-made accounts',
+                'flag1-desc': 'Selling "ready-made" Google, Facebook accounts is always fraud',
+                'flag2-title': 'Partner chain',
+                'flag2-desc': 'When it\'s unclear who sells and everyone points at each other',
+                'flag3-title': '1 hour for dispute',
+                'flag3-desc': 'Unrealistic dispute resolution deadlines (legally 10 days)',
+                'flag4-title': 'Bot support',
+                'flag4-desc': 'Copy-paste responses and sending to telegram bots',
+                'flag5-title': 'Multiple domains',
+                'flag5-desc': 'Clone sites .ru/.io/.guru/.world - sign of scammers',
+                'legal-title': 'What to do if you were scammed',
+                'action1-title': 'Official route',
+                'action1-step1': 'Police report under Article 159 Criminal Code',
+                'action1-step2': 'Complaint to Roskomnadzor for site blocking',
+                'action1-step3': 'Appeal to Consumer Protection',
+                'action1-step4': 'Bank claim (chargeback)',
+                'action2-title': 'Public route',
+                'action2-step1': 'Social media post with proof',
+                'action2-step2': 'Reviews on Trustpilot, review sites',
+                'action2-step3': 'YouTube expose video',
+                'action2-step4': 'SEO attack through expose sites',
+                'action3-title': 'Money recovery',
+                'action3-step1': 'Chargeback through bank (if paid by card)',
+                'action3-step2': 'PayPal dispute (if paid through them)',
+                'action3-step3': 'Payment system complaint',
+                'action3-step4': 'Class action (find other victims)',
+                'faq-title': 'Frequently Asked Questions',
+                'faq1-q': 'Can I get my money back after purchase?',
+                'faq1-a': 'Chances are minimal. The scheme is designed to make refunds as difficult as possible. The only real way is chargeback through your bank if you paid by card.',
+                'faq2-q': 'Why doesn\'t the police help?',
+                'faq2-a': 'The damage amount is too small to open a case. Scammers deliberately keep prices low so victims don\'t go to law enforcement.',
+                'faq3-q': 'Is this legal activity?',
+                'faq3-a': 'No! This is pure fraud under Article 159 of the Criminal Code. There\'s intent, deception, and illegal taking of money.',
+                'faq4-q': 'What other names do these scammers use?',
+                'faq4-a': 'SMS-Activate operates under different domains: .ru, .org, .io, .guru, .world, .page. Also linked to hStock.org and mythical ZX Shop.',
+                'faq5-q': 'What if I already bought?',
+                'faq5-a': 'Immediately contact your bank for chargeback, take screenshots of all correspondence, write reviews on all platforms and warn others.',
+                'contact-title': 'Need legal help?',
+                'contact-desc': 'I\'m a practicing lawyer specializing in internet law and consumer protection. I\'ll help prepare claims and recover money.',
+                'btn-report': '📝 Report fraud',
+                'footer-scheme': 'Scam scheme',
+                'footer-evidence': 'Evidence',
+                'footer-protection': 'Protection',
+                'footer-faq': 'FAQ',
+                'footer-contact': 'Contact',
+                'copyright': '© 2024 SMS-Activate Scam Alert. All rights reserved. Site created to warn about fraud.',
+                'disclaimer': 'This site is for informational purposes and created to protect consumers from fraud.'
+            }
+        };
+
+        let currentLang = 'ru';
+
+        // Language switching
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update translations
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update page title
+            document.title = lang === 'ru' 
+                ? 'SMS-Activate Мошенничество - Разоблачение схемы обмана | Защитите свои деньги'
+                : 'SMS-Activate Scam - Fraud Scheme Exposed | Protect Your Money';
+        }
+
+        // Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.loader-wrapper').style.opacity = '0';
+                document.querySelector('.loader-wrapper').style.visibility = 'hidden';
+            }, 1000);
+        });
+
+        // Particles animation
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to top
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+                
+                // Close other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Toast notifications
+        function showToast(type, message) {
+            const toast = document.getElementById('toast');
+            const icon = toast.querySelector('.toast-icon');
+            const msg = toast.querySelector('.toast-message');
+            
+            toast.className = 'toast ' + type;
+            icon.textContent = type === 'success' ? '✅' : '⚠️';
+            msg.textContent = message;
+            
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.step-card, .evidence-card, .tip-card, .flag-item, .action-card').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+
+        // Counter animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 30);
+        }
+
+        // Trigger counter animation on scroll
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(num => {
+                        const target = parseInt(num.getAttribute('data-count'));
+                        animateCounter(num, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Dynamic year in copyright
+        const year = new Date().getFullYear();
+        document.querySelectorAll('.copyright').forEach(el => {
+            el.innerHTML = el.innerHTML.replace('2024', year);
+        });
+
+        // Add warning on page leave
+        let warningShown = false;
+        window.addEventListener('beforeunload', (e) => {
+            if (!warningShown && window.scrollY > 100) {
+                e.preventDefault();
+                e.returnValue = 'Вы уверены, что хотите покинуть страницу? Не забудьте поделиться информацией о мошенниках!';
+                warningShown = true;
+            }
+        });
+
+        // Show initial toast after 3 seconds
+        setTimeout(() => {
+            showToast('warning', currentLang === 'ru' 
+                ? '⚠️ Остерегайтесь мошенников SMS-Activate!' 
+                : '⚠️ Beware of SMS-Activate scammers!');
+        }, 3000);
+    </script>
+</body>
+</html>
